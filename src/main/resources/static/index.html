@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{
+            margin: 0 50px;
+        }
+        h2 {
+            display: block;
+            width: 100%;
+        }
+        nav{
+            background-color: lightgray;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-content: center;
+            padding: 5px 0;
+        }
+        .nav-links{
+            align-content: center;
+        }
+        .nav-links a{
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 10px;
+        }
+        .budget-wrapper{
+            display: block;
+            background-color: lightgray;
+            width: 100%;
+            padding: 10px;
+        }
+        .essential-wrapper{
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .debt-wrapper{
+            display: block;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .subscription-wrapper {
+            display: block;
+            background-color: lightpink;
+            padding: 10px;
+        }
+        .expenses-wrapper{
+            display: block;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Sparks Budgeting App</title>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/sparksbudgeting-logo.png" height="auto" width="200" alt="Logo"/>
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/add">Add</a>
+                <a href="/view">View</a>
+            </div>
+        </nav>
+    </header>
 </head>
 <body>
+    <div class="welcome-wrapper">
+        <h1>Welcome NAME!</h1>
+    </div>
+    <div class="budget-wrapper">
+        <h2>Budget</h2>
+        <div class="essential-wrapper">
+            <h3>Essentials</h3>
+        </div>
+        <div class="debt-wrapper">
+            <h3>Debt</h3>
+        </div>
+        <div class="subscription-wrapper">
+            <h3>Subscriptions</h3>
+        </div>
+        <div class="expenses-wrapper">
+            <h3>Expenses</h3>
+        </div>
+    </div>
+
 
 </body>
 </html>
