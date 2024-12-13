@@ -3,14 +3,18 @@ package com.sparks.sparksbudgetingapp.model;
 public class Budget {
     private int budgetID;
     private int userID;
-    private float totalAmount;
+    private float amount;
     private float remainingAmount;
+    private String name;
+    private String category;
 
-    public Budget(int budgetID, int userID, float totalAmount, float remainingAmount) {
+    public Budget() {
         this.budgetID = budgetID;
         this.userID = userID;
-        this.totalAmount = totalAmount;
+        this.amount = amount;
         this.remainingAmount = remainingAmount;
+        this.name = name;
+        this.category = category;
     }
 
     public int getBudgetID() {
@@ -29,12 +33,12 @@ public class Budget {
         this.userID = userID;
     }
 
-    public float getTotalAmount() {
-        return totalAmount;
+    public float getAmount() {
+        return amount;
     }
 
-    public void setTotalAmount(float totalAmount) {
-        this.totalAmount = totalAmount;
+    public void setAmount(float amount) {
+        this.amount = amount;
     }
 
     public float getRemainingAmount() {
@@ -51,5 +55,21 @@ public class Budget {
 
     public void viewRemainingBudget() {
         System.out.println("Remaining budget: " + this.remainingAmount);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
     }
 }
